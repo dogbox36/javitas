@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="main.js"></script>
 </head>
+
 <body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
+    <main>
+        <button id="all-area">Összes bolygó</button>
+        <button id="kozt">KisebbNagyobb</button>
+        <button id="atmero">Átmérő</button>
+
+        <button id="darabszam">Törpe</button>
+        <div id="szerzo-input">
+        </div>
+        <hr> Átmérők:
+        <p id="atmeroki"></p>
+        <hr><input type="number" placeholder="min" id="min">
+        <input type="number" placeholder="max" id="max">
+        <ul id="inbetween"></ul>
+        <hr>
+        <hr><label for="torpe">Törpe? </label>
+        <input type="checkbox" id="torpe" name="torpe">
+        <ul id="torpe"></ul>
+        <input type="number" id="darab" readonly>
+    </main>
+    <output id="output"></output>
+
+
 </body>
+
 </html>
